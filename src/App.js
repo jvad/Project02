@@ -1,24 +1,36 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+
+import "./MyStyle.css";
+import Hello from "./Hello";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1 className="heading">Welcome To My First React App Project</h1>
+      <p>
+        Below I'm Passing My name and age using props through my costum
+        component
+      </p>
+      <Hello name="Jawad Khan" age={45 - 22}></Hello>
+      <hr></hr>
+      <ol>
+        <li>
+          <a href="https://github.com/jvad/Project02.git" target="_blank">
+            My Repository
+          </a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com/jvadii" target="_blank">
+            Contact Me
+          </a>
+        </li>
+      </ol>
+      <img
+        src="https://images.unsplash.com/photo-1590611936760-eeb9bc598548?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"
+        height="300px"
+        width="500px"
+      />
     </div>
   );
 }

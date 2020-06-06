@@ -1,0 +1,22 @@
+body {
+  background-color: rgb(42, 73, 87);
+  text-align: center;
+}
+.heading {
+  color: rgb(192, 79, 141);
+}
+.hello {
+  margin: 30px;
+  background-color: darkgreen;
+}
+li {
+  padding: 15px;
+  list-style: none;
+}
+li > a {
+  color: whitesmoke;
+  text-decoration: none;
+}
+li a:hover {
+  color: turquoise;
+}
